@@ -1,0 +1,23 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${fileDirname}",
+            "env": {
+                "DISPLAY":"10.31.13.82:0.0"  
+                // localhost:10.0 一 验证工程程序可使用服务器GUI  二  验证terminal可使用GUI 都未成功，原因未明
+                // 容器id:10.0     一 验证工程程序可使用服务器GUI  二  验证terminal可使用GUI   一 成功 二未成功报错 
+                // 本机ip:0.0       一 验证工程程序可使用服务器GUI  二  验证terminal可使用GUI   一，二皆成功，但从远端传输GUI 有延时
+            }
+        }
+    ]
+}
